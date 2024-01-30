@@ -1,11 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edwin Joel - Portfolio</title>
+    <!-- Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
+
 <body>
-    <h1>Hello World</h1>
+
+        <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar fixed-top">
+        <a class="navbar-brand ml-5" href="#" id="nav_name">Edwin Joel J</a>
+        <!-- Add a responsive button for small screens -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse mr-5" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="smoothScroll('intro', event)">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="smoothScroll('about',event)">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="smoothScroll('skills',event)">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="smoothScroll('education',event)">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="smoothScroll('projects',event)">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="smoothScroll('contact',event)">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<!-- Your other sections here -->
+
+ <!-- Introduction Section -->
+<div class="row mt-3">
+    <div class="col-md-6">
+        <section id="intro" class="py-5">
+            <div class="container-fluid ml-5">
+                <h2>Hey There,</h2>
+                <h1>I am Edwin Joel J</h1>
+                <p>I am a passionate web developer and aspiring designer.</p>
+                
+                <div class="mt-5">
+                    <button class="btn btn-primary">About Me</button>
+                </div>
+                <!-- Social Media Buttons -->
+                <div class="social-buttons mt-5">
+                    <a href="https://www.instagram.com/edwinjoel210" target="_blank" class="btn btn-primary btn-rounded-circle mr-2">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/9488509187" target="_blank" class="btn btn-success btn-rounded-circle mr-2">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:edwinjoel1204@gmail.com" class="btn btn-danger btn-rounded-circle mr-2">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/edwinjoel1204" target="_blank" class="btn btn-dark btn-rounded-circle mr-2">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" target="_blank" class="btn btn-primary btn-rounded-circle">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-6">
+    </div>
+</div>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <h1 align="center">About Me</h1>
+            </div>
+            <div class="row gt-3 mt-5">
+                <div class="col-md-6 offset-md-3" align="center">
+                    <h3>I'm Edwin Joel J</h3>
+                    <h6>Student</h6>
+                    <p class="mt-5">I'm pursuing my B.Tech degree at Velammal College of Engineering and Technology.I am also exploring trending technologies like node.js, react and even more. I love to solve problems in websites like HackerRank & Leetcode.I am also a professional musician and audio/vido editor. I love to contribute to the ever evolving landscape of technology.I will always keep learning and challenge myself !</p>
+                    <!-- Add a Download Resume Button -->
+                    <p>Age : 19</p>
+                    <p>E-mail : edwinjoel1204@gmail.com</p>
+                    <p>Phone : 9488509187</p>
+                    <p>Madurai, Tamil Nadu</p>
+                    <div class="text-center">
+                        <a href="path/to/your/resume.pdf" download="Your_Name_Resume.pdf" class="btn btn-primary">Resume</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container-fluid text-center">
+            <h2>Skills</h2>
+            <div class="container-fluid" id="skills_svg_div">
+                <div class="row mt-5">
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_java.svg" class="img-fluid" alt="Java">
+                        <p class="text-center mt-2">Java</p>
+                    </div>
+                    <!-- Python -->
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_python.svg" class="img-fluid" alt="Python">
+                        <p class="text-center mt-2">Python</p>
+                    </div>
+                    <!-- C -->
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_c.svg" class="img-fluid" alt="C">
+                        <p class="text-center mt-2">C</p>
+                    </div>
+                    <!-- Bootstrap -->
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_bootstrap.svg" class="img-fluid" alt="Bootstrap">
+                        <p class="text-center mt-2">Bootstrap</p>
+                    </div>
+                    <!-- HTML -->
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_html.svg" class="img-fluid" alt="HTML">
+                        <p class="text-center mt-2">HTML</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <!-- CSS -->
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_css.svg" class="img-fluid" alt="CSS">
+                        <p class="text-center mt-2">CSS</p>
+                    </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_git.svg" class="img-fluid" alt="Git">
+                        <p class="text-center mt-2">Git</p>
+                    </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_ds.svg" class="img-fluid" alt="DSA">
+                        <p class="text-center mt-2">DSA</p>
+                    </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_js.svg" class="img-fluid" alt="JavaScript">
+                        <p class="text-center mt-2">Javascript</p>
+                    </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_ps.svg" class="img-fluid" alt="Photoshop">
+                        <p class="text-center mt-2">Photoshop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2>Education</h2>
+            <p>Include details about your college, major, expected graduation date, and any noteworthy achievements.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container">
+            <h2>Projects</h2>
+            <p>Include details about your projects, such as names, descriptions, and GitHub links.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Provide a way for people to reach out to you, such as an email address or contact form.</p>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Your custom JavaScript file -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
