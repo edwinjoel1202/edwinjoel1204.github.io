@@ -6,10 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edwin Joel - Portfolio</title>
     <!-- Bootstrap CSS link -->
+        <!-- Bootstrap JS and Popper.js -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Your custom JavaScript file -->
+        <script src="script.js"></script>    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Your custom CSS file -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5aR9BqBqNblNf8CBh4VLv5Xqjn0p6U2qU5ZmTECfxlArnm" crossorigin="anonymous">
 
 </head>
 
@@ -51,41 +58,37 @@
 <!-- Your other sections here -->
 
  <!-- Introduction Section -->
-<div class="row mt-3">
-    <div class="col-md-6">
-        <section id="intro" class="py-5">
-            <div class="container-fluid ml-5">
-                <h2>Hey There,</h2>
-                <h1>I am Edwin Joel J</h1>
-                <p>I am a passionate web developer and aspiring designer.</p>
-                
-                <div class="mt-5">
-                    <button class="btn btn-primary">About Me</button>
-                </div>
-                <!-- Social Media Buttons -->
-                <div class="social-buttons mt-5">
-                    <a href="https://www.instagram.com/edwinjoel210" target="_blank" class="btn btn-primary btn-rounded-circle mr-2">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://wa.me/9488509187" target="_blank" class="btn btn-success btn-rounded-circle mr-2">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="mailto:edwinjoel1204@gmail.com" class="btn btn-danger btn-rounded-circle mr-2">
-                        <i class="far fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com/edwinjoel1204" target="_blank" class="btn btn-dark btn-rounded-circle mr-2">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="#" target="_blank" class="btn btn-primary btn-rounded-circle">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
+<section id="intro" class="py-5">
+    <div class="row mt-3">
+        <div class="col-md-6 offset-md-3" align="center">
+            <h2>Hey There,</h2>
+            <h1>I am Edwin Joel J</h1>
+            <p>I am a passionate web developer and aspiring designer.</p>             
+            <div class="mt-5">
+                <button class="btn btn-primary">About Me</button>
             </div>
-        </section>
+            <!-- Social Media Buttons -->
+            <div class="social-buttons mt-5">
+                <a href="https://www.instagram.com/edwinjoel210" target="_blank" class="btn btn-primary btn-rounded-circle mr-2">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/9488509187" target="_blank" class="btn btn-success btn-rounded-circle mr-2">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:edwinjoel1204@gmail.com" class="btn btn-danger btn-rounded-circle mr-2">
+                    <i class="far fa-envelope"></i>
+                </a>
+                <a href="https://github.com/edwinjoel1204" target="_blank" class="btn btn-dark btn-rounded-circle mr-2">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank" class="btn btn-primary btn-rounded-circle">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                        
+            </div>
+        </div>
     </div>
-    <div class="col-md-6">
-    </div>
-</div>
+</section>
 
     <!-- About Section -->
     <section id="about" class="py-5">
@@ -205,24 +208,61 @@
     <!-- Projects Section -->
     <section id="projects" class="bg-light py-5">
         <div class="container">
-            <h2>Projects</h2>
+            <h2 align="center">Projects</h2>
+            <div class="row mt-5">
+                <div class="col-md-8 offset-md-2">
+                    <div class="card">
+                        <img src="Images/JPEG/project_login.png" class="card-img-top" alt="login page">
+                        <div class="card-body">
+                            <h5 class="card-text text-center mb-4">Login page</h5>
+                            <p class="card-text text-center">I designed a fully functional and responsive login page for a client during my internship in January 2024.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Provide a way for people to reach out to you, such as an email address or contact form.</p>
+    <footer id="contact" class="py-4 bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 align-items-center d-flex justify-content-center">
+                    <h2 class="mb-2">Portfolio | Edwin Joel J</h2>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="mb-3">Connect with Me</h3>
+                    <ul class="list-unstyled ml-5">
+                        <li ><a href="#" class="text-white"><i class="fab fa-linkedin"></i>&nbsp&nbspLinkedIn</a></li>
+                        <li><a href="#" class="text-white"><i class="fab fa-twitter"></i>&nbsp&nbspTwitter</a></li>
+                        <li><a href="#" class="text-white"><i class="fab fa-github"></i>&nbsp&nbspGitHub</a></li>
+                        <li><a href="#" class="text-white"><i class="fab fa-instagram"></i>&nbsp&nbspInstagram</a></li>
+                        <li><a href="#" class="text-white"><i class="far fa-envelope"></i>&nbsp&nbspMail</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="mb-3">Contact Me</h3>
+                    <p>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+919488509187">&nbsp&nbsp+91 9488509187</a>
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:edwinjoel1204@gmail.com">&nbsp&nbspedwinjoel1204@gmail.com</a>
+                    </p>
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        &nbsp&nbspIndia, Tamilnadu, Madurai-625 011. 
+                    </p>
+                </div>
+                <hr>
+                <div class="col-md-12 text-white" align="center">
+                    <p>Designed by Edwin Joel J</p>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Your custom JavaScript file -->
-    <script src="script.js"></script>
+    </footer>
 
 </body>
 

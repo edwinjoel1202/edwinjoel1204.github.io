@@ -1,16 +1,3 @@
-ul li a:hover
-{
-   text-underline-offset: 50%; 
-}
-#intro
-{
-    height: 800px;
-}
-#about
-{
-    height: 800px;
-}
-
 #skills_svg_div
 {
     width:1200px;
@@ -20,3 +7,16 @@ img
 {
     width: 150px;
 }
+
+a
+{
+    color:white;
+}
+
+a:hover
+{
+    text-decoration: none;
+    color:rgb(97, 97, 196)
+}
+
+
