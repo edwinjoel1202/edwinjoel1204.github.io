@@ -1,3 +1,13 @@
+/*------------------fonts-------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@500&family=Roboto+Condensed:wght@700&display=swap');
+
+
+
+
+
+
+/*-------------------------------------*/
+
 #skills_svg_div
 {
     width:1200px;
@@ -13,10 +23,83 @@ a
     color:white;
 }
 
-a:hover
+#ruler
+{      
+    margin-top: 60px;
+    width:700px;
+    border: 1px solid white;
+}
+
+/*-----------------------------------------------------------*/
+.navbar
+{
+    background-image: linear-gradient(to right,#5A3E79,#6C0BA9);
+    height: 70px;
+}
+
+#nav_name
+{   
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+#nav_name:hover
 {
     text-decoration: none;
-    color:rgb(97, 97, 196)
+    color:white;
+}
+
+#navbarNav
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    position: relative;
+    color: #fff; /* Set your initial color */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Set your underline height */
+    bottom: 0;
+    left: 0;
+    background: yellow; /* Set your initial underline color */
+    transform: scaleX(0); /* Initially set the width to 0 for the animation effect */
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: yellow; /* Set your hover color */
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover::before {
+    transform: scaleX(1); /* Increase the width to 100% on hover */
+    transform-origin: bottom left;
+}
+
+
+#intro
+{
+    border: 1px solid black;
+    margin-top: 70px;
+}
+
+#hithere
+{
+    font-size: 50px;
+    padding-left: 50px;
+}
+
+#intro_name
+{
+    padding:40px 0px 0px 50px;
 }
 
 
