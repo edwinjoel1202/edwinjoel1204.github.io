@@ -1,8 +1,7 @@
 /*------------------fonts-------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@500&family=Roboto+Condensed:wght@700&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@300&display=swap');
 
 
 
@@ -87,14 +86,16 @@ a
 
 #intro
 {
-    border: 1px solid black;
-    margin-top: 70px;
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 20px;
+    
 }
 
 #hithere
 {
     font-size: 50px;
-    padding-left: 50px;
+    padding-left: 50px;padding-top: 50px;
 }
 
 #intro_name
@@ -102,4 +103,50 @@ a
     padding:40px 0px 0px 50px;
 }
 
+#intro_aboutMe_button_div
+{
+    padding:40px 0px 0px 50px;
+}
 
+
+#intro_aboutMe_button
+{
+    border-radius: 0%;
+}
+
+#social_buttons_div
+{
+    padding:40px 0px 40px 50px;
+}
+#social_buttons_div a
+{
+    border-radius: 50%;
+}
+
+.section_titles
+{
+    font-family:'Merriweather', serif;
+    font-weight:bold;
+    font-size: 50px;
+}
+
+body {
+    background-color: #e5ecfb;
+}
+
+#about
+{
+    margin-top: 20px;
+}
+
+#aboutme_content
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+#aboutme_contact_details
+{
+    font-family: 'Poppins', sans-serif;
+}

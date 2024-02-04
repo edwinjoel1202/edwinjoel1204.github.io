@@ -5,7 +5,7 @@ function smoothScroll(targetId) {
     if (targetElement) {
         event.preventDefault();
         window.scrollTo({
-            top: targetElement.offsetTop - 50, // Adjust the offset as needed
+            top: targetElement.offsetTop - 100, // Adjust the offset as needed
             behavior: 'smooth'
         });
     }
