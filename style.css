@@ -2,15 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@500&family=Roboto+Condensed:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 
 /*-------------------------------------*/
 
-#skills_svg_div
-{
-    width:1200px;
-}
+
 
 img
 {
@@ -89,23 +86,15 @@ a
     margin-top: 100px;
     background-color: #fff;
     border-radius: 20px;
+    height: 700px;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
     
 }
 
 #hithere
 {
     font-size: 50px;
-    padding-left: 50px;padding-top: 50px;
-}
-
-#intro_name
-{
-    padding:40px 0px 0px 50px;
-}
-
-#intro_aboutMe_button_div
-{
-    padding:40px 0px 0px 50px;
+    font-family: Montserrat;
 }
 
 
@@ -114,10 +103,6 @@ a
     border-radius: 0%;
 }
 
-#social_buttons_div
-{
-    padding:40px 0px 40px 50px;
-}
 #social_buttons_div a
 {
     border-radius: 50%;
@@ -150,3 +135,56 @@ body {
 {
     font-family: 'Poppins', sans-serif;
 }
+
+#skills,#projects
+{
+    background: linear-gradient(to bottom, #57059e, #4a00e0);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.yellow-heading
+{
+    color: #cfea15;
+}
+
+.skill-image {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.skill-img-text
+{
+    padding-top: 30px;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@keyframes shake {
+    0%,100%{
+        transform: translateX(0);
+    }
+    20%, 60%{
+        transform: translateX(-5px);
+    }
+    40%, 80%{
+        transform: translateX(5px);
+    }
+}
+
+.shaking-image:hover {
+    animation: shake 0.8s ease;
+}
+
+.white-icon
+{
+    color:white
+}
+
+

@@ -5,20 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edwin Joel - Portfolio</title>
+
     <!-- Bootstrap CSS link -->
-    <!-- Bootstrap JS and Popper.js -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome CSS link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <!-- Your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Your custom JavaScript file -->
     <script src="script.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Your custom CSS file -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5aR9BqBqNblNf8CBh4VLv5Xqjn0p6U2qU5ZmTECfxlArnm" crossorigin="anonymous">
-
 </head>
 
 <body>
@@ -59,18 +62,14 @@
         <!-- Your other sections here -->
 
         <!-- Introduction Section -->
-        <section id="intro">
+        <section id="intro" class="d-flex justify-content-center align-items-center">
             <div class="row mt-3">
-                <div class="col-md-4">
+                <div class="col-md text-center">
                     <h2 id="hithere">Hey There,</h2>
                     <h1 id="intro_name">I am Edwin Joel J</h1>
-                    <div class="mt-5" id="intro_aboutMe_button_div">
-                        <button class="btn btn-primary" id="intro_aboutMe_button" onclick="smoothScroll('about',event)">About Me</button>
-                    </div>
                     <!-- Social Media Buttons -->
                     <div class="social-buttons mt-5" id="social_buttons_div">
-                        <a href="https://www.instagram.com/edwinjoel210" target="_blank"
-                            class="btn btn-primary mr-2">
+                        <a href="https://www.instagram.com/edwinjoel210" target="_blank" class="btn btn-primary mr-2">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="https://wa.me/9488509187" target="_blank" class="btn btn-success mr-2">
@@ -79,18 +78,20 @@
                         <a href="mailto:edwinjoel1204@gmail.com" class="btn btn-danger mr-2">
                             <i class="far fa-envelope"></i>
                         </a>
-                        <a href="https://github.com/edwinjoel1204" target="_blank"
-                            class="btn btn-dark mr-2">
+                        <a href="https://github.com/edwinjoel1204" target="_blank" class="btn btn-dark mr-2">
                             <i class="fab fa-github"></i>
                         </a>
                         <a href="#" target="_blank" class="btn btn-primary">
                             <i class="fab fa-linkedin"></i>
                         </a>
-
+                    </div>
+                    <div class="mt-5" id="intro_aboutMe_button_div">
+                        <button class="btn btn-primary" id="intro_aboutMe_button" onclick="smoothScroll('about',event)">About Me</button>
                     </div>
                 </div>
             </div>
         </section>
+        
 
         <!-- About Section -->
         <section id="about" class="py-5">
@@ -104,8 +105,8 @@
                         <h6>Student</h6>
                         <p class="mt-5" id="aboutme_content">I'm pursuing my B.Tech degree in Information Technology at Velammal College of Engineering and Technology. I am
                             also exploring trending technologies like node.js, react and even more. I love to solve problems
-                            in websites like HackerRank & Leetcode.I am also a professional musician and audio/vido editor.
-                            I love to contribute to the ever evolving landscape of technology.I will always keep learning
+                            in websites like HackerRank & Leetcode. I am also a professional musician and audio/video editor.
+                            I love to contribute to the ever evolving landscape of technology. I will always keep learning
                             and challenge myself !</p>
                         <!-- Add a Download Resume Button -->
                         <div id="aboutme_contact_details">
@@ -124,62 +125,56 @@
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="bg-light py-5">
-            <div class="text-center">
-                <h1 class="section_titles"><i class="fas fa-laptop-code"></i> Skills</h1>
-                <div class="container" id="skills_svg_div">
-                    <div class="row mt-5">
-                        <div class="col-md">
-                            <img src="Images/SVG/svg_java.svg" class="img-fluid " alt="Java">
-                            <p class="text-center mt-2">Java</p>
-                        </div>
-                        <!-- Python -->
-                        <div class="col-md">
-                            <img src="Images/SVG/svg_python.svg" class="img-fluid" alt="Python">
-                            <p class="text-center mt-2">Python</p>
-                        </div>
-                        <!-- C -->
-                        <div class="col-md">
-                            <img src="Images/SVG/svg_c.svg" class="img-fluid" alt="C">
-                            <p class="text-center mt-2">C</p>
-                        </div>
-                        <!-- Bootstrap -->
-                        <div class="col-md align-self-center">
-                            <img src="Images/SVG/svg_bootstrap.svg" class="img-fluid" alt="Bootstrap">
-                            <p class="text-center mt-2">Bootstrap</p>
-                        </div>
-                        <!-- HTML -->
-                        <div class="col-md">
-                            <img src="Images/SVG/svg_html.svg" class="img-fluid" alt="HTML">
-                            <p class="text-center mt-2">HTML</p>
-                        </div>
+        <section id="skills">
+            <h1 class="section_titles yellow-heading text-center"><i class="fas fa-laptop-code white-icon"></i> Skills & Abilities</h1>
+            <div class="container-fluid">
+                <div class="row mt-5">
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_java.svg" class="card-img img-fluid skill-image shaking-image" alt="Java">
+                        <p class="text-center mt-2 skill-img-text">Java</p>
                     </div>
-                    <div class="row mt-5">
-                        <!-- CSS -->
-                        <div class="col-md">
-                            <img src="Images/SVG/svg_css.svg" class="img-fluid" alt="CSS">
-                            <p class="text-center mt-2">CSS</p>
-                        </div>
-                        <div class="col-md">
-                            <img src="Images/SVG/svg_git.svg" class="img-fluid" alt="Git">
-                            <p class="text-center mt-2">Git</p>
-                        </div>
-                        <div class="col-md">
-                            <img src="Images/SVG/svg_ds.svg" class="img-fluid" alt="DSA">
-                            <p class="text-center mt-2">DSA</p>
-                        </div>
-                        <div class="col-md">
-                            <img src="Images/SVG/svg_js.svg" class="img-fluid" alt="JavaScript">
-                            <p class="text-center mt-2">Javascript</p>
-                        </div>
-                        <div class="col-md">
-                            <img src="Images/SVG/svg_ps.svg" class="img-fluid" alt="Photoshop">
-                            <p class="text-center mt-2">Photoshop</p>
-                        </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_python.svg" class="card-img img-fluid skill-image shaking-image" alt="Python">
+                        <p class="text-center mt-2 skill-img-text">Python</p>
+                    </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_c.svg" class="card-img img-fluid skill-image shaking-image" alt="C">
+                        <p class="text-center mt-2 skill-img-text">C</p>
+                    </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_bootstrap.svg" class="card-img img-fluid skill-image shaking-image" alt="Bootstrap">
+                        <p class="text-center mt-2 skill-img-text">Bootstrap</p>
+                    </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_html.svg" class="card-img img-fluid skill-image shaking-image" alt="HTML">
+                        <p class="text-center mt-2 skill-img-text">HTML</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_css.svg" class="card-img img-fluid skill-image shaking-image" alt="CSS">
+                        <p class="text-center mt-2 skill-img-text">CSS</p>
+                    </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_git.svg" class="card-img img-fluid skill-image shaking-image" alt="Git">
+                        <p class="text-center mt-2 skill-img-text">Git</p>
+                    </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_ds.svg" class="card-img img-fluid skill-image shaking-image" alt="DSA">
+                        <p class="text-center mt-2 skill-img-text">DSA</p>
+                    </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_js.svg" class="card-img img-fluid skill-image shaking-image" alt="Javascript">
+                        <p class="text-center mt-2 skill-img-text">Javascript</p>
+                    </div>
+                    <div class="col-md">
+                        <img src="Images/SVG/svg_ps.svg" class="card-img img-fluid skill-image shaking-image" alt="Photoshop">
+                        <p class="text-center mt-2 skill-img-text">Photoshop</p>
                     </div>
                 </div>
             </div>
         </section>
+        
 
         <!-- Education Section -->
         <section id="education" class="py-5">
@@ -217,7 +212,7 @@
         <!-- Projects Section -->
         <section id="projects" class="bg-light py-5">
             <div class="container">
-                <h2 align="center" class="section_titles"><i class="fas fa-laptop-code"></i> Projects</h2>
+                <h2 align="center" class="section_titles yellow-heading"><i class="fas fa-laptop-code white-icon"></i> Projects</h2>
                 <div class="row mt-5">
                     <div class="col-md-8 offset-md-2">
                         <div class="card">
