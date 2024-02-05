@@ -33,11 +33,15 @@ a
     height: 70px;
 }
 
+.navbar-toggler
+{
+    margin-bottom: 20px;
+}
 #nav_name
 {   
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: 35px;
 }
 #nav_name:hover
 {
@@ -45,10 +49,11 @@ a
     color:white;
 }
 
-#navbarNav
-{
+#navbarNav {
+    background-image: linear-gradient(to right, #5A3E79, #6C0BA9);
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
+    text-align: center;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -56,30 +61,33 @@ a
     color: #fff; /* Set your initial color */
     text-decoration: none;
     transition: color 0.2s ease;
+    padding-right: 20px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link::before {
+/* Default styles for navbar links */
+.navbar-nav .nav-link {
+    color: white;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Underline styles */
+.navbar-nav .nav-link::before {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 2px; /* Set your underline height */
+    width: 80%; /* Adjust the width of the underline */
+    height: 2px;
     bottom: 0;
-    left: 0;
-    background: yellow; /* Set your initial underline color */
-    transform: scaleX(0); /* Initially set the width to 0 for the animation effect */
-    transform-origin: bottom right;
+    left: 2%; /* Center the underline within the list item */
+    background-color: yellow;
+    transform: scaleX(0);
     transition: transform 0.5s ease;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: yellow; /* Set your hover color */
+/* Fade in effect for underline on hover */
+.navbar-nav .nav-link:hover::before {
+    transform: scaleX(1);
 }
-
-.navbar-expand-lg .navbar-nav .nav-link:hover::before {
-    transform: scaleX(1); /* Increase the width to 100% on hover */
-    transform-origin: bottom left;
-}
-
 
 #intro
 {
@@ -186,5 +194,3 @@ body {
 {
     color:white
 }
-
-

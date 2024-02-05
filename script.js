@@ -10,3 +10,11 @@ function smoothScroll(targetId) {
         });
     }
 }
+
+$(document).ready(function () {
+    $('.navbar-nav .nav-link').on('click', function () {
+      if ($('.navbar-toggler').is(':visible')) {
+        $('.navbar-toggler').click();
+      }
+    });
+  });
