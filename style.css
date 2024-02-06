@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 /*-------------------------------------*/
 
 
@@ -96,14 +96,55 @@ a {
     border-radius: 20px;
     height: 700px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to top, #a996d6 0%, #fbc2eb 100%);
+    background-size: 600% 600%;
+    animation: backgroundAnimation 5s ease-in-out infinite;
 }
 
+@keyframes backgroundAnimation {
+    0%, 100% {
+        background-position: 0% 0%, 100% 0%, 100% 100%, 0% 100%;
+        background-size: 400% 400%;
+    }
+    25% {
+        background-position: 0% 100%, 100% 100%, 100% 0%, 0% 0%;
+        background-size: 200% 200%;
+    }
+    50% {
+        background-position: 100% 0%, 100% 100%, 0% 100%, 0% 0%;
+        background-size: 400% 400%;
+    }
+    75% {
+        background-position: 100% 100%, 0% 100%, 0% 0%, 100% 0%;
+        background-size: 200% 200%;
+    }
+}
+
+
+
+
+
 #hithere {
-    font-size: 70px;
+    font-size: 50px;
     font-family: Montserrat;
     padding-top: 100px;
     padding-bottom: 50px;
     font-weight: bold;
+    color: #fff;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.typewriter_name_out
+{
+    font-family: 'Protest Strike', sans-serif;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+#typewriter-text{
+    color :#6C0BA9;
 }
 
 #social_buttons_div {
@@ -113,18 +154,21 @@ a {
 #social_buttons_div a {
     border-radius: 50%;
 }
-
 .about_me_button_div{
     margin-top: 100px;
 }
+
 .about_me_button {
+  width: 200px;
+  height: 50px;
   border-color: #8e44ad;
-  border-radius: 0;
+  border-radius: 5px;
   color: #8e44ad;
   position: relative;
   overflow: hidden;
   z-index: 1;
   transition: color 150ms ease-in-out;
+  font-family: 'Poppins', sans-serif;
   
   &:after {
     content: '';
