@@ -9,44 +9,42 @@
 
 
 
-img
-{
+img {
     width: 150px;
 }
 
-a
-{
-    color:white;
+a {
+    color: white;
 }
 
-#ruler
-{      
+#ruler {
     margin-top: 60px;
-    width:700px;
+    width: 700px;
     border: 1px solid white;
 }
 
 /*-----------------------------------------------------------*/
-.navbar
-{
-    background-image: linear-gradient(to right,#5A3E79,#6C0BA9);
+.navbar {
+    background-image: linear-gradient(to right, #5A3E79, #6C0BA9);
     height: 70px;
 }
 
-.navbar-toggler
-{
+.navbar-toggler {
     margin-bottom: 20px;
 }
-#nav_name
-{   
+
+#nav_name {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#nav_name:hover
-{
+
+#nav_name:hover {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 #navbarNav {
@@ -58,7 +56,8 @@ a
 
 .navbar-expand-lg .navbar-nav .nav-link {
     position: relative;
-    color: #fff; /* Set your initial color */
+    color: #fff;
+    /* Set your initial color */
     text-decoration: none;
     transition: color 0.2s ease;
     padding-right: 20px;
@@ -75,10 +74,12 @@ a
 .navbar-nav .nav-link::before {
     content: '';
     position: absolute;
-    width: 80%; /* Adjust the width of the underline */
+    width: 80%;
+    /* Adjust the width of the underline */
     height: 2px;
     bottom: 0;
-    left: 2%; /* Center the underline within the list item */
+    left: 2%;
+    /* Center the underline within the list item */
     background-color: yellow;
     transform: scaleX(0);
     transition: transform 0.5s ease;
@@ -89,37 +90,68 @@ a
     transform: scaleX(1);
 }
 
-#intro
-{
+#intro {
     margin-top: 100px;
     background-color: #fff;
     border-radius: 20px;
     height: 700px;
-    box-shadow: 2px 2px 15px rgba(0,0,0,0.2);
-    
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
 }
 
-#hithere
-{
-    font-size: 50px;
+#hithere {
+    font-size: 70px;
     font-family: Montserrat;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-weight: bold;
 }
 
-
-#intro_aboutMe_button
-{
-    border-radius: 0%;
+#social_buttons_div {
+    padding-top: 50px;
 }
 
-#social_buttons_div a
-{
+#social_buttons_div a {
     border-radius: 50%;
 }
 
-.section_titles
-{
-    font-family:'Merriweather', serif;
-    font-weight:bold;
+.about_me_button_div{
+    margin-top: 100px;
+}
+.about_me_button {
+  border-color: #8e44ad;
+  border-radius: 0;
+  color: #8e44ad;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 150ms ease-in-out;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 100%;
+    background: #8e44ad;
+    z-index: -1;
+    transition: width 250ms ease-in-out;
+  }
+  
+  &:hover {
+    color: #fff;
+    &:after {
+      width: 110%;
+    }
+  }
+}
+
+
+.section_titles {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
     font-size: 50px;
 }
 
@@ -127,32 +159,28 @@ body {
     background-color: #e5ecfb;
 }
 
-#about
-{
+#about {
     margin-top: 20px;
 }
 
-#aboutme_content
-{
+#aboutme_content {
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     font-size: 20px;
 }
 
-#aboutme_contact_details
-{
+#aboutme_contact_details {
     font-family: 'Poppins', sans-serif;
 }
 
-#skills,#projects
-{
+#skills,
+#projects {
     background: linear-gradient(to bottom, #57059e, #4a00e0);
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.yellow-heading
-{
+.yellow-heading {
     color: #cfea15;
 }
 
@@ -165,23 +193,28 @@ body {
     margin-top: 20px;
 }
 
-.skill-img-text
-{
+.skill-img-text {
     padding-top: 30px;
-    color:white;
+    color: white;
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
 
 @keyframes shake {
-    0%,100%{
+
+    0%,
+    100% {
         transform: translateX(0);
     }
-    20%, 60%{
+
+    20%,
+    60% {
         transform: translateX(-5px);
     }
-    40%, 80%{
+
+    40%,
+    80% {
         transform: translateX(5px);
     }
 }
@@ -190,7 +223,6 @@ body {
     animation: shake 0.8s ease;
 }
 
-.white-icon
-{
-    color:white
+.white-icon {
+    color: white
 }
