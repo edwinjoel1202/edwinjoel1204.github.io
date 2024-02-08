@@ -19,7 +19,7 @@ a {
 
 #ruler {
     margin-top: 60px;
-    width: 700px;
+    width: 1000px;
     border: 1px solid white;
 }
 
@@ -90,15 +90,17 @@ a {
     transform: scaleX(1);
 }
 
+
+
 #intro {
     margin-top: 100px;
     background-color: #fff;
-    border-radius: 20px;
+    border-radius: 30px;
     height: 700px;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
-    background-image: linear-gradient(to top, #a996d6 0%, #fbc2eb 100%);
+    background-image: linear-gradient(to top, #c1d84c 0%, #e88ecf 100%);
     background-size: 600% 600%;
     animation: backgroundAnimation 5s ease-in-out infinite;
 }
