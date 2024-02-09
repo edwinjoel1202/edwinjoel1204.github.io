@@ -1,6 +1,6 @@
 
 // Smooth scroll function
-function smoothScroll(targetId) {
+function smoothScroll(targetId, event) {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
         event.preventDefault();

@@ -138,11 +138,16 @@ a {
     text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
+
 .typewriter_name_out
 {
     font-family: 'Protest Strike', sans-serif;
     font-size: 70px;
-    font-weight: lighter;
+}
+
+.typewriter-container
+{
+    height: 110px;
 }
 
 #typewriter-text{
@@ -200,6 +205,8 @@ a {
     font-weight: bold;
     font-size: 50px;
 }
+
+
 
 body {
     background-color: #e5ecfb;
@@ -271,4 +278,15 @@ body {
 
 .white-icon {
     color: white
+}
+
+
+.footer-links {
+    color: white !important;
+    transition: color 0.3s ease !important; /* Smooth transition effect */
+    text-decoration: none !important; /* Remove default underline */
+}
+
+.footer-links:hover {
+    color: yellow !important; /* Use !important to ensure the style is applied */
 }
