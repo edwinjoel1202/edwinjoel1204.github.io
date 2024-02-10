@@ -305,6 +305,6 @@ body {
 
 .card-body {
   transform-style: preserve-3d;
-  transform: translateZ(30px); /* Adjust the translateZ value as needed */
+  transform: translateZ(50px); /* Adjust the translateZ value as needed */
 }
 
