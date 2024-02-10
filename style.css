@@ -290,3 +290,21 @@ body {
 .footer-links:hover {
     color: yellow !important; /* Use !important to ensure the style is applied */
 }
+
+
+#card_stj, #card_vcet
+{
+    transform-style: preserve-3d;
+    transform: perspective(1000px);  
+}
+
+#card_stj:hover, #card_vcet:hover
+{
+    transform: perspective(1000px) translateZ(20px);
+}
+
+.card-body {
+  transform-style: preserve-3d;
+  transform: translateZ(30px); /* Adjust the translateZ value as needed */
+}
+

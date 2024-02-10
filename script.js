@@ -60,3 +60,23 @@ $(document).ready(function () {
     typeWriter(); // Initialize the typewriter effect
   });
   
+  document.addEventListener('DOMContentLoaded', function () {
+    // Your existing code for smooth scroll and navbar toggle
+
+    // Typewriter effect code
+
+    // Initialize vanilla-tilt for cards with specified IDs
+    VanillaTilt.init(document.querySelector("#card_stj"), {
+        max: 15,
+        speed: 100,
+        glare: true,
+        "max-glare": 0.1,
+    });
+
+    VanillaTilt.init(document.querySelector("#card_vcet"), {
+        max: 15,
+        speed: 100,
+        glare: true,
+        "max-glare": 0.1,
+    });
+});
